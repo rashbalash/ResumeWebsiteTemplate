@@ -3,3 +3,7 @@
   margin: auto;
 }
 
+#mainTextContainer {
+  max-width: 50%;
+  margin: auto;
+}

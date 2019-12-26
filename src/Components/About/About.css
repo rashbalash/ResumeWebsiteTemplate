@@ -1,0 +1,9 @@
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#aboutText {
+    font-size: 18px;
+    text-align: center;
+}
