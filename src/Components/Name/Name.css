@@ -1,0 +1,8 @@
+.nameContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#nameText {
+    font-size: 36px;
+}
