@@ -1,9 +1,11 @@
 .App {
-  max-width: 75%;
+  width: 1200px;
+  max-width: 95%;
   margin: auto;
 }
 
 #mainTextContainer {
-  max-width: 50%;
+  width: 700px;
+  max-width: 90%;
   margin: auto;
 }

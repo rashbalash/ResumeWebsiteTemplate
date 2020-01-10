@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function Section() {
+import './Section.css';
 
-    return (
-        <div className="sectionContainer">
-            <p id="sectionText">{this.props.sectionName}</p>
-        </div>
-    )
+class Section extends Component {
+    render() {
+        return (
+            <div className="sectionContainer">
+                <p id="sectionText">{this.props.sectionName}</p>
+            </div>
+        )
+    }
+    
 }
+
+export default Section;

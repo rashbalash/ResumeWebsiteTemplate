@@ -1,0 +1,14 @@
+.itemContainer {
+    margin: auto;
+    width: 650px;
+    max-width: 95%;
+}
+
+#itemName {
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+#itemDescription {
+    margin-top: 2px;
+}
