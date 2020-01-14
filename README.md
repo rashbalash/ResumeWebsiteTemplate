@@ -1,4 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Build Your Own Resume Website
+
+To begin, ensure you have Node.JS and Visual Studio Code installed on your computer. Once you are sure you have this installed, proceed to the following steps:
+
+  1) Clone the ResumeWebsiteTemplate repository onto your computer and navigate into the main directory
+  2) Run `npm install` and wait for the installation of the packages to complete, you should see this in the terminal, then you can run `npm start` so you can see a live view of your website in a browser, it should automatically open, but you can find it at localhost:3000.
+  3) Open 'App.js' which is where you will make a large majority of your edits for the page, here you will be able to fill out the following DEFAULT values:
+    - fullName
+    - aboutDescription
+    - schoolName
+    - schoolDescription
+    - workName
+    - workDescription
+    - projectName
+    - projectDescription
+    - skillCategory
+    - skillItems
+    
+  4) You will also be able to add (import) your profile image, which should be added under 'src/Components/Image/' as a jpeg file, named 'Profile'.
+  5) You will also be able to add (import) social media icons, you can download more social media icons here: https://iconmonstr.com/
+    - in order to add a social media icon: first, download the icon from iconmonstr (where you can configure the icon) as a PNG, place it under 'src/SocialMediaIcons/' as a simple name, next import the icon near the top of 'App.js' as I have done with GitHub. Finally, near the bottom of 'App.js' add it as I have with GitHub, changing only the url (href) and the src (src={importName}).
+
+  6) Once you are completed with making changes, you can run `npm run build` which will then build your website as a single page application, and you can then host it on your preffered site (such as Firebase).
+
+
+The following is the default 'create react app' ReadMe: 
 
 ## Available Scripts
 
