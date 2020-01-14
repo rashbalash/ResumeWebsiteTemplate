@@ -31,9 +31,12 @@ function App() {
   const schoolDescription = "Major, Year-Year, etc. Major, Year-Year, etc. Major, Year-Year, etc.";
 
   // Experience Section Props:
-
+  const workName = "";
+  const workDescription = "";
 
   // Projects Section Props:
+  const projectName = "";
+  const projectDescription = "";
 
   // Skills Section Props:
   const skillCategory = "Web";
