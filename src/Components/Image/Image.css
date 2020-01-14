@@ -3,3 +3,8 @@
     justify-content: center;
 }
 
+#profileImage {
+    border-radius: 50%;
+    max-width: 600px;
+    width: 90%;
+}

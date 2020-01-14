@@ -9,3 +9,13 @@
   max-width: 90%;
   margin: auto;
 }
+
+#socialIconContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcon {
+  max-width: 35px;
+  margin: 0px 5px 0px 5px;
+}
