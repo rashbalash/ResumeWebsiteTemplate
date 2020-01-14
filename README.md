@@ -5,16 +5,16 @@ To begin, ensure you have Node.JS and Visual Studio Code installed on your compu
   1) Clone the ResumeWebsiteTemplate repository onto your computer and navigate into the main directory
   2) Run `npm install` and wait for the installation of the packages to complete, you should see this in the terminal, then you can run `npm start` so you can see a live view of your website in a browser, it should automatically open, but you can find it at localhost:3000.
   3) Open 'App.js' which is where you will make a large majority of your edits for the page, here you will be able to fill out the following DEFAULT values:
-    - fullName
-    - aboutDescription
-    - schoolName
-    - schoolDescription
-    - workName
-    - workDescription
-    - projectName
-    - projectDescription
-    - skillCategory
-    - skillItems
+      - fullName
+      - aboutDescription
+      - schoolName
+      - schoolDescription
+      - workName
+      - workDescription
+      - projectName
+      - projectDescription
+      - skillCategory
+      - skillItems
     
   4) You will also be able to add (import) your profile image, which should be added under 'src/Components/Image/' as a jpeg file, named 'Profile'.
   5) You will also be able to add (import) social media icons, you can download more social media icons here: https://iconmonstr.com/
