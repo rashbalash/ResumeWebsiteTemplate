@@ -27,3 +27,16 @@
     margin-top: -5px;
     align-self: center;
 }
+
+a {
+    color: rgb(0, 87, 185);
+    text-decoration: none;
+    -webkit-transition: .3s ease ;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+}
+
+a:hover {
+    color: black;
+}

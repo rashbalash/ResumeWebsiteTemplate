@@ -41,6 +41,7 @@ function App() {
   // Projects Section Props:
   const projectName = "Project Name";
   const projectDescription = "Project Description";
+  const projectLink = "https://google.com/";
 
   // Skills Section Props:
   const skillCategory = "Web";
@@ -71,7 +72,7 @@ function App() {
 
         {/* Your Projects */}
         <Section sectionName={"Projects"} />
-        <SectionItem itemImageAddress={projectLogo} itemName={projectName} itemDescription={projectDescription} />
+        <SectionItem itemImageAddress={projectLogo} itemName={projectName} itemDescription={projectDescription} itemLink={projectLink} />
 
         {/* Your Skills */}
         <Section sectionName={"Skills"} />
