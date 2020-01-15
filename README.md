@@ -1,9 +1,10 @@
 ## Build Your Own Resume Website
 
 To begin, ensure you have: 
-- Node.JS: https://nodejs.org/en/
-- Git: https://git-scm.com/downloads
-- Visual Studio Code (or any IDE): https://code.visualstudio.com/
+  - Node.JS: https://nodejs.org/en/
+  - Git: https://git-scm.com/downloads
+  - Visual Studio Code (or any IDE): https://code.visualstudio.com/
+
 installed on your computer. Once you are sure you have this installed, proceed to the following steps:
 
   1) Clone the ResumeWebsiteTemplate repository onto your computer and navigate into the main directory
