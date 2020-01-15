@@ -5,7 +5,6 @@ import './SectionItem.css';
 class SectionItem extends Component {
 
     render() {
-        console.log(this.props.itemImageAddress)
         if (this.props.itemImageAddress !== undefined) {
             return (
                 <div className="itemContainer">
