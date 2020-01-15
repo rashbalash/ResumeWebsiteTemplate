@@ -10,13 +10,17 @@ import Footer from './Components/Footer/Footer';
 
 // Import your section item images here:
 // i.e. import schoolLogo from './SectionItemImagers/schoolLogo.jpg';
-import schoolLogo from './Components/Image/Profile.jpg';
+import schoolLogo from './SectionItemImages/schoolLogo.jpg';
+import workLogo from './SectionItemImages/workLogo.jpg';
+import projectLogo from './SectionItemImages/projectLogo.jpg';
 
 // DOWNLOAD social media icons here: https://iconmonstr.com/
 // and
 // Import your social Media Icons here:
 // i.e. import linkedIn from './SocialMediaIcons/linkedin.svg';
 import github from './SocialMediaIcons/github.png';
+import gmail from './SocialMediaIcons/gmail.png';
+import linkedin from './SocialMediaIcons/linkedin.png'
 
 function App() {
 
@@ -28,15 +32,15 @@ function App() {
 
   // Education Section Props:
   const schoolName = "School Name";
-  const schoolDescription = "Major, Year-Year, etc. Major, Year-Year, etc. Major, Year-Year, etc.";
+  const schoolDescription = "Major, Year-Year, etc.";
 
   // Experience Section Props:
-  const workName = "";
-  const workDescription = "";
+  const workName = "Work Name";
+  const workDescription = "Position, Starting Date-Present/Ending Date, etc.";
 
   // Projects Section Props:
-  const projectName = "";
-  const projectDescription = "";
+  const projectName = "Project Name";
+  const projectDescription = "Project Description";
 
   // Skills Section Props:
   const skillCategory = "Web";
@@ -63,11 +67,11 @@ function App() {
 
         {/* Your Experience */}
         <Section sectionName={"Experience"} />
-        {/* <SectionItem itemImageAddress={workLogo} itemName={workName} itemDescription={workDescription} /> */}
+        <SectionItem itemImageAddress={workLogo} itemName={workName} itemDescription={workDescription} />
 
         {/* Your Projects */}
         <Section sectionName={"Projects"} />
-        {/* <SectionItem itemImageAddress={projectLogo} itemName={projectName} itemDescription={projectDescription} /> */}
+        <SectionItem itemImageAddress={projectLogo} itemName={projectName} itemDescription={projectDescription} />
 
         {/* Your Skills */}
         <Section sectionName={"Skills"} />
@@ -83,7 +87,9 @@ function App() {
 
         <div id="socialIconContainer">
           {/* TO ADD A NEW ICON, ONLY CHANGE URL AND src={} TO THE ICON YOU WANT */}
+          <a href="https://gmail.com" target="_blank" rel="noopener noreferrer"><img className="socialIcon" src={gmail} alt="socialIcon" /></a>
           <a href="https://github.com" target="_blank" rel="noopener noreferrer"><img className="socialIcon" src={github} alt="socialIcon" /></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img className="socialIcon" src={linkedin} alt="socialIcon" /></a>
         </div>
 
       </div>
