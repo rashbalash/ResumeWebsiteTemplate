@@ -5,8 +5,8 @@ import Name from './Components/Name/Name';
 import Image from './Components/Image/Image';
 import About from './Components/About/About';
 import Section from './Components/Section/Section';
-import SectionItem from './Components/SectionItem/SectionItem';
 import Footer from './Components/Footer/Footer';
+import SectionItem from './Components/SectionItem/SectionItem';
 
 // Import your section item images here:
 // i.e. import schoolLogo from './SectionItemImagers/schoolLogo.jpg';
@@ -31,23 +31,165 @@ function App() {
   const aboutDescription = "Enter a short description about yourself here. For example, you could do a short overview of your education, experience, interests, and something about yourself you think others might find interesting.";
 
   // Education Section Props:
-  const schoolName = "School Name";
-  const schoolDescription = "Major, Year-Year, etc.";
+  const schools = [
+    {
+      logo: schoolLogo,
+      name: "School Name",
+      description: "Major, Year-Year, etc.",
+      link: "" // You do not need to fill in a link, only put one if you want
+    },
+  ]
 
   // Experience Section Props:
-  const workName = "Work Name";
-  const workDescription = "Position, Starting Date-Present/Ending Date, etc.";
+  const experiences = [
+    {
+      logo: workLogo,
+      name: "Work Name",
+      description: "Position, Starting Date-Present/Ending Date, etc.",
+      link: "" // You do not need to fill in a link, only put one if you want
+    },
+  ]
 
   // Projects Section Props:
-  const projectName = "Project Name";
-  const projectDescription = "Project Description";
-  const projectLink = "https://google.com/";
+  const projects = [
+    {
+      logo: projectLogo,
+      name: "Project Name",
+      description: "Project Description",
+      link: "https://google.com/" // You do not need to fill in a link, only put one if you want
+    },
+  ]
 
   // Skills Section Props:
-  const skillCategory = "Web";
-  const skillItems = "HTML, CSS, JavaScript, ReactJS"
+  const skills = [
+    {
+      name: "Web",
+      description: "HTML, CSS, JavaScript, ReactJS",
+    },
+  ]
+
+  const contactMe = [
+    {
+      logo: github,
+      url: "https://www.github.com/rashbalash"
+    },
+    {
+      logo: linkedin,
+      url: "https://www.linkedin.com/in/rashadbalashov/"
+    },
+    {
+      logo: gmail,
+      url: "https://www.gmail.com"
+    }
+  ]
 
   // Add More Sections as you like, create more props here
+
+  const renderEducation = (schools) => {
+    if (schools.length === 0) {
+      return null;
+    }
+    return (
+      <>
+        <Section sectionName={"Education"} />
+        {
+          schools.map(school => {
+            return <SectionItem
+              itemImageAddress={school.logo}
+              itemName={school.name}
+              itemDescription={school.description}
+              itemLink={school.link} />
+          })
+        }
+      </>
+    );
+  }
+
+  const renderExperience = (experiences) => {
+    if (experiences.length === 0) {
+      return null;
+    }
+    return (
+      <>
+        <Section sectionName={"Experience"} />
+        {
+          experiences.map(experience => {
+            return <SectionItem
+              itemImageAddress={experience.logo}
+              itemName={experience.name}
+              itemDescription={experience.description}
+              itemLink={experience.link} />
+          })
+        }
+      </>
+    );
+  }
+
+  const renderProjects = (projects) => {
+    if (projects.length === 0) {
+      return null;
+    }
+    return (
+      <>
+        <Section sectionName={"Projects"} />
+        {
+          projects.map(project => {
+            return <SectionItem
+              itemImageAddress={project.logo}
+              itemName={project.name}
+              itemDescription={project.description}
+              itemLink={project.link} />
+          })
+        }
+      </>
+    );
+  }
+
+  const renderSkills = (skills) => {
+    if (skills.length === 0) {
+      return null;
+    }
+    return (
+      <>
+        <Section sectionName={"Skills"} />
+        {
+          skills.map(skill => {
+            return <SectionItem
+              itemImageAddress={skill.logo}
+              itemName={skill.name}
+              itemDescription={skill.description}
+              itemLink={skill.link} />
+          })
+        }
+      </>
+    );
+  }
+
+  const renderSocialIcons = (contactMe) => {
+    if (contactMe.length === 0) {
+      return null;
+    }
+    return (
+      <>
+        <Section sectionName={"Contact Me"} />
+        <div id="socialIconContainer">
+        {
+          contactMe.map(contact => {
+            return <a
+                href={contact.url}
+                target="_blank"
+                rel="noopener noreferrer">
+                  <img 
+                    className="socialIcon"
+                    src={contact.logo}
+                    alt="socialIcon" />
+                </a>            
+          })
+        }
+        </div>
+      </>
+    )
+  }
 
   return (
     <div className="App">
@@ -63,38 +205,25 @@ function App() {
         <About aboutDescription={aboutDescription} />
 
         {/* Your Education */}
-        <Section sectionName={"Education"} />
-        <SectionItem itemImageAddress={schoolLogo} itemName={schoolName} itemDescription={schoolDescription}/>
+        {renderEducation(schools)}
 
         {/* Your Experience */}
-        <Section sectionName={"Experience"} />
-        <SectionItem itemImageAddress={workLogo} itemName={workName} itemDescription={workDescription} />
+        {renderExperience(experiences)}
 
         {/* Your Projects */}
-        <Section sectionName={"Projects"} />
-        <SectionItem itemImageAddress={projectLogo} itemName={projectName} itemDescription={projectDescription} itemLink={projectLink} />
+        {renderProjects(projects)}
 
         {/* Your Skills */}
-        <Section sectionName={"Skills"} />
-        <SectionItem itemName={skillCategory} itemDescription={skillItems} />
+        {renderSkills(skills)}
 
         {/* Other */}
-        {/* <Section sectionName={"Other Activities"} /> */}
+        {/* {renderOther(otherActivities)} */}
 
         {/* Add More Sections Here As You Please! */}
 
-        {/* Social Media Icons */}
-        <Section sectionName={"Contact Me"} />
-
-        <div id="socialIconContainer">
-          {/* TO ADD A NEW ICON, ONLY CHANGE URL AND src={} TO THE ICON YOU WANT */}
-          <a href="https://gmail.com" target="_blank" rel="noopener noreferrer"><img className="socialIcon" src={gmail} alt="socialIcon" /></a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer"><img className="socialIcon" src={github} alt="socialIcon" /></a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img className="socialIcon" src={linkedin} alt="socialIcon" /></a>
-        </div>
-
+        {/* Social Media Icons */}       
+        {renderSocialIcons(contactMe)}
       </div>
-
       <Footer fullName={fullName} />
     </div>
   );

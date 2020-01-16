@@ -5,7 +5,7 @@ import './SectionItem.css';
 class SectionItem extends Component {
 
     render() {
-        if (this.props.itemImageAddress !== undefined && this.props.itemLink === undefined) {
+        if (this.props.itemImageAddress !== undefined && (this.props.itemLink === undefined || this.props.itemLink === "")) {
             return (
                 <div className="itemContainer">
                     {/* Image */}
