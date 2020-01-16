@@ -97,6 +97,9 @@ function App() {
 
   // Add More Sections as you like, create more props here
 
+
+  // UNLESS YOU WANT TO ADD MORE SECTIONS THERE IS NOTHING TO EDIT BEYOND THIS POINT
+
   const renderEducation = (schools) => {
     if (schools.length === 0) {
       return null;
