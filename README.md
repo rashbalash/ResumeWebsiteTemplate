@@ -22,7 +22,8 @@ installed on your computer. Once you are sure you have these installed, proceed 
       - skillItems
     
   4) You will also be able to add (import) your profile image, which should be added under 'src/Components/Image/' as a jpeg file, named 'Profile'. This is also where you will be able to add your logos for the section items, such as schoolLogo, workLogo, and projectLogo.
-  (NOTE: FOR ALL IMAGES MAKE SURE TO USE A 1:1 CROPPED IMAGE)
+  (NOTE: For all images make sure to use a 1:1 cropped image, make sure to also compress the jpegs that you have on the page, especially the small ones alongside your experience for faster load times: https://compressjpeg.com/)
+
   5) You will also be able to add (import) social media icons, you can download more social media icons here: https://iconmonstr.com/
     - in order to add a social media icon: first, download the icon from iconmonstr (where you can configure the icon) as a PNG, place it under 'src/SocialMediaIcons/' as a simple name, next import the icon near the top of 'App.js' as I have done with GitHub. Finally, near the bottom of 'App.js' add it as I have with GitHub, changing only the url (href) and the src (src={importName}).
 
