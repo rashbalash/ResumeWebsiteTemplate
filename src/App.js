@@ -58,6 +58,18 @@ function App() {
       description: "Project Description",
       link: "https://google.com/" // You do not need to fill in a link, only put one if you want
     },
+    {
+      logo: projectLogo,
+      name: "Project Name",
+      description: "Project Description",
+      link: "https://google.com/" // You do not need to fill in a link, only put one if you want
+    },
+    {
+      logo: projectLogo,
+      name: "Project Name",
+      description: "Project Description",
+      link: "https://google.com/" // You do not need to fill in a link, only put one if you want
+    },
   ]
 
   // Skills Section Props:
@@ -65,7 +77,7 @@ function App() {
     {
       name: "Web",
       description: "HTML, CSS, JavaScript, ReactJS",
-    },
+    }
   ]
 
   const contactMe = [

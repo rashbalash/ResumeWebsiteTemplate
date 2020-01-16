@@ -29,7 +29,7 @@ class SectionItem extends Component {
             )
         } else {
             return (
-                <div className="itemContainer">
+                <div className="skillContainer">
                     <div className="itemContentContainer">
                         <p id="itemDescription">{this.props.itemName} | {this.props.itemDescription}</p>
                     </div>

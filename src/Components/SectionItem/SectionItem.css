@@ -1,5 +1,12 @@
 .itemContainer {
-    margin: 20px auto;
+    margin: 25px auto auto auto;
+    width: 650px;
+    max-width: 95%;
+    display: flex;
+}
+
+.skillContainer {
+    margin: 10px auto;
     width: 650px;
     max-width: 95%;
     display: flex;
