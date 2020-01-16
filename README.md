@@ -12,14 +12,16 @@ installed on your computer. Once you are sure you have these installed, proceed 
   3) Open 'App.js' which is where you will make a large majority of your edits for the page, here you will be able to fill out the following DEFAULT values (keep in mind that you can make more specific names so that it is easier to add more items in the future):
       - fullName
       - aboutDescription
-      - schoolName
-      - schoolDescription
-      - workName
-      - workDescription
-      - projectName
-      - projectDescription
-      - skillCategory
-      - skillItems
+      - schools
+        - logo, name, description, link (if you want)
+      - experiences
+        - logo, name, descrption, link (if you want)
+      - projects
+        - logo, name, description, link (if you want)
+      - skills
+        - name, description
+      - contactMe
+        - logo, url        
     
   4) You will also be able to add (import) your profile image, which should be added under 'src/Components/Image/' as a jpeg file, named 'Profile'. This is also where you will be able to add your logos for the section items, such as schoolLogo, workLogo, and projectLogo.
   (NOTE: For all images make sure to use a 1:1 cropped image, make sure to also compress the jpegs that you have on the page, especially the small ones alongside your experience for faster load times: https://compressjpeg.com/)
